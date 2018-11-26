@@ -10,32 +10,30 @@ import UIKit
 
 class PictureBookTableViewController: UITableViewController {
 
+   var books = [Information]()
+    
     @IBOutlet var bookLabels: [UILabel]!
     @IBOutlet weak var imageView: UIImageView!
     
-    
-    var bookLabel: String?
-    var imageName: String?
-    
-    var books = ["Papa Please Get the Moon for Me", "We are Going on a Bear Hunt","What's the Time, Mr. Wolf?","Eat Your Peas", "Handa's Surprise","Guess How Much I Love You","Bark, George", "Journey Home from Grandpa","Silly Sally", "Santa's Beard", "Beekle"]
-    
-    override func prepare(for segue: UIStroryboardSegue, sender: Any?) {
-        let controller = segue.destination as?
-        ViewController
-        controller?.name = "papaCover"
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        var i = 0
-        for label in bookLabels {
-            label.text = books[i]
-            i = i + 1
-            
-        }
-            
-        }
-
+        initBooks()
+    }
+ 
+    func initBooks() {
+        books.append(Information(name: "【Papa Please Get The Moon For Me】", explainText: explainKeys.papa, imageName:"PapaCover" ))
+        books.append(Information(name: "【We Are Going On A Bear Hunt】", explainText: explainKeys.bear, imageName:"bearCover" ))
+        books.append(Information(name: "【What's The Time, Mr. Wolf?】", explainText: explainKeys.wolf, imageName:"wolfCover" ))
+         books.append(Information(name: "【Go Away, Big Green Monster】", explainText: explainKeys.monster, imageName:"monsterCover" ))
+        books.append(Information(name: "【Eat Your Peas】", explainText: explainKeys.pea, imageName:"peaCover" ))
+        books.append(Information(name: "【Handa's Surprise】", explainText: explainKeys.handa, imageName:"handaCover" ))
+        books.append(Information(name: "【Guess How Much I Love Youe】", explainText: explainKeys.guess, imageName:"guessCover" ))
+        books.append(Information(name: "【Bark, George】", explainText: explainKeys.bark, imageName:"barkCover" ))
+        books.append(Information(name: "【We All Go Traveling By】", explainText: explainKeys.travel, imageName:"travelCover" ))
+        books.append(Information(name: "【Silly Sally】", explainText: explainKeys.silly, imageName:"sillyCover" ))
+        books.append(Information(name: "【Santa's Beard】", explainText: explainKeys.santa, imageName:"santaCover" ))
+        books.append(Information(name: "【Beekle】", explainText: explainKeys.beekle, imageName:"beekleCover" ))
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -101,4 +99,14 @@ class PictureBookTableViewController: UITableViewController {
     }
     */
  
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as? ViewController
+        
+        if let row = tableView.indexPathForSelectedRow?.row {
+            controller?.bookName = books[row].name
+            controller?.explainText = books[row].explainText
+            controller?.imageName = books[row].imageName
+        }
+    }
+}
 

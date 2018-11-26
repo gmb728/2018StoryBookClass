@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD25944721ABDEA700FFAAF6 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD25944621ABDEA700FFAAF6 /* Info.swift */; };
+		DD424E0321A8EF2900EF408C /* PictureBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD424E0221A8EF2900EF408C /* PictureBookTableViewController.swift */; };
 		DDE04B6221A6C5A100E99802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE04B6121A6C5A100E99802 /* AppDelegate.swift */; };
 		DDE04B6421A6C5A100E99802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE04B6321A6C5A100E99802 /* ViewController.swift */; };
 		DDE04B6721A6C5A100E99802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE04B6521A6C5A100E99802 /* Main.storyboard */; };
@@ -15,7 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DDE04B5E21A6C5A100E99802 /* BigSmall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigSmall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD25944621ABDEA700FFAAF6 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		DD424E0221A8EF2900EF408C /* PictureBookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureBookTableViewController.swift; sourceTree = "<group>"; };
+		DDE04B5E21A6C5A100E99802 /* 2018StoryBookClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2018StoryBookClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE04B6121A6C5A100E99802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDE04B6321A6C5A100E99802 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDE04B6621A6C5A100E99802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +42,7 @@
 		DDE04B5521A6C5A100E99802 = {
 			isa = PBXGroup;
 			children = (
-				DDE04B6021A6C5A100E99802 /* BigSmall */,
+				DDE04B6021A6C5A100E99802 /* 2018StoryBookClass */,
 				DDE04B5F21A6C5A100E99802 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +50,32 @@
 		DDE04B5F21A6C5A100E99802 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDE04B5E21A6C5A100E99802 /* BigSmall.app */,
+				DDE04B5E21A6C5A100E99802 /* 2018StoryBookClass.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DDE04B6021A6C5A100E99802 /* BigSmall */ = {
+		DDE04B6021A6C5A100E99802 /* 2018StoryBookClass */ = {
 			isa = PBXGroup;
 			children = (
 				DDE04B6121A6C5A100E99802 /* AppDelegate.swift */,
-				DDE04B6321A6C5A100E99802 /* ViewController.swift */,
 				DDE04B6521A6C5A100E99802 /* Main.storyboard */,
+				DDE04B6321A6C5A100E99802 /* ViewController.swift */,
+				DD424E0221A8EF2900EF408C /* PictureBookTableViewController.swift */,
+				DD25944621ABDEA700FFAAF6 /* Info.swift */,
 				DDE04B6821A6C5A300E99802 /* Assets.xcassets */,
 				DDE04B6A21A6C5A300E99802 /* LaunchScreen.storyboard */,
 				DDE04B6D21A6C5A300E99802 /* Info.plist */,
 			);
-			path = BigSmall;
+			path = 2018StoryBookClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DDE04B5D21A6C5A100E99802 /* BigSmall */ = {
+		DDE04B5D21A6C5A100E99802 /* 2018StoryBookClass */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDE04B7021A6C5A300E99802 /* Build configuration list for PBXNativeTarget "BigSmall" */;
+			buildConfigurationList = DDE04B7021A6C5A300E99802 /* Build configuration list for PBXNativeTarget "2018StoryBookClass" */;
 			buildPhases = (
 				DDE04B5A21A6C5A100E99802 /* Sources */,
 				DDE04B5B21A6C5A100E99802 /* Frameworks */,
@@ -79,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = BigSmall;
+			name = 2018StoryBookClass;
 			productName = BigSmall;
-			productReference = DDE04B5E21A6C5A100E99802 /* BigSmall.app */;
+			productReference = DDE04B5E21A6C5A100E99802 /* 2018StoryBookClass.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DDE04B5921A6C5A100E99802 /* Build configuration list for PBXProject "BigSmall" */;
+			buildConfigurationList = DDE04B5921A6C5A100E99802 /* Build configuration list for PBXProject "2018StoryBookClass" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DDE04B5D21A6C5A100E99802 /* BigSmall */,
+				DDE04B5D21A6C5A100E99802 /* 2018StoryBookClass */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD424E0321A8EF2900EF408C /* PictureBookTableViewController.swift in Sources */,
+				DD25944721ABDEA700FFAAF6 /* Info.swift in Sources */,
 				DDE04B6421A6C5A100E99802 /* ViewController.swift in Sources */,
 				DDE04B6221A6C5A100E99802 /* AppDelegate.swift in Sources */,
 			);
@@ -284,12 +292,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3M66U64HQ4;
-				INFOPLIST_FILE = BigSmall/Info.plist;
+				INFOPLIST_FILE = 2018StoryBookClass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmb728.BigSmall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmb728.2018StoryBookClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,12 +310,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3M66U64HQ4;
-				INFOPLIST_FILE = BigSmall/Info.plist;
+				INFOPLIST_FILE = 2018StoryBookClass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmb728.BigSmall;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmb728.2018StoryBookClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DDE04B5921A6C5A100E99802 /* Build configuration list for PBXProject "BigSmall" */ = {
+		DDE04B5921A6C5A100E99802 /* Build configuration list for PBXProject "2018StoryBookClass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DDE04B6E21A6C5A300E99802 /* Debug */,
@@ -326,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDE04B7021A6C5A300E99802 /* Build configuration list for PBXNativeTarget "BigSmall" */ = {
+		DDE04B7021A6C5A300E99802 /* Build configuration list for PBXNativeTarget "2018StoryBookClass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DDE04B7121A6C5A300E99802 /* Debug */,
