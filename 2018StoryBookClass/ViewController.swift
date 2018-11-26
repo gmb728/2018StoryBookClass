@@ -17,7 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var explainTextView: UITextView!
     
     func changeAction() {
-        if let name = bookName, let text = explainText, let image = imageName{
+        if let name = bookName,
+        let text = explainText, let image = imageName{
             navigationItem.title = name
             explainTextView.text = text
             bookImageView.image = UIImage(named: "\(image)")
@@ -28,6 +29,11 @@ class ViewController: UIViewController {
         changeAction()
         super.viewDidLoad()
             // Do any additional setup after loading the view.
+        bookImageView.layer.masksToBounds = false
+        self.bookImageView.layer.shadowOffset = CGSize(width:-8,height:8)
+        self.bookImageView.layer.shadowColor = UIColor.darkGray.cgColor
+        self.bookImageView.layer.shadowOpacity = 0.8
+      
         }
         
         override func didReceiveMemoryWarning() {

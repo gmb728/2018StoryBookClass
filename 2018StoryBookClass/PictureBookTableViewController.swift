@@ -21,7 +21,7 @@ class PictureBookTableViewController: UITableViewController {
     }
  
     func initBooks() {
-        books.append(Information(name: "【Papa Please Get The Moon For Me】", explainText: explainKeys.papa, imageName:"PapaCover" ))
+        books.append(Information(name: "【Papa Please Get The Moon For Me】", explainText: explainKeys.papa, imageName:"papaCover" ))
         books.append(Information(name: "【We Are Going On A Bear Hunt】", explainText: explainKeys.bear, imageName:"bearCover" ))
         books.append(Information(name: "【What's The Time, Mr. Wolf?】", explainText: explainKeys.wolf, imageName:"wolfCover" ))
          books.append(Information(name: "【Go Away, Big Green Monster】", explainText: explainKeys.monster, imageName:"monsterCover" ))
