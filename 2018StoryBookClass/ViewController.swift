@@ -9,9 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var book: String?
+    @IBOutlet weak var imageView: UIScrollView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let book = book {
+            imageView = UIScrollView(named: book)
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
