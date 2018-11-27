@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kmp-bH-djY">
-                                <rect key="frame" x="30" y="120" width="354" height="271"/>
+                                <rect key="frame" x="30" y="100" width="354" height="354"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kmp-bH-djY" secondAttribute="height" multiplier="1:1" id="qnk-1e-Iuk"/>
+                                </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="abP-De-bud">
-                                <rect key="frame" x="30" y="421" width="354" height="305"/>
+                                <rect key="frame" x="30" y="464" width="354" height="252"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="305" id="kVT-sq-aZv"/>
-                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -34,13 +34,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kmp-bH-djY" firstAttribute="top" secondItem="wai-gX-kvM" secondAttribute="top" constant="120" id="9n9-ss-Lj8"/>
+                            <constraint firstItem="abP-De-bud" firstAttribute="top" secondItem="kmp-bH-djY" secondAttribute="bottom" constant="10" id="4WT-HY-qIH"/>
+                            <constraint firstItem="kmp-bH-djY" firstAttribute="centerX" secondItem="wai-gX-kvM" secondAttribute="centerX" id="5Ws-D5-GQL"/>
+                            <constraint firstItem="kmp-bH-djY" firstAttribute="top" secondItem="wai-gX-kvM" secondAttribute="top" constant="100" id="9n9-ss-Lj8"/>
                             <constraint firstItem="abP-De-bud" firstAttribute="leading" secondItem="wai-gX-kvM" secondAttribute="leading" constant="30" id="NTo-OY-fdy"/>
                             <constraint firstItem="abP-De-bud" firstAttribute="leading" secondItem="kmp-bH-djY" secondAttribute="leading" id="NXN-ni-9eT"/>
-                            <constraint firstItem="kmp-bH-djY" firstAttribute="trailing" secondItem="wai-gX-kvM" secondAttribute="trailing" constant="-30" id="SoB-3S-ydI"/>
-                            <constraint firstItem="abP-De-bud" firstAttribute="top" secondItem="kmp-bH-djY" secondAttribute="bottom" constant="30" id="pyo-dI-oSd"/>
-                            <constraint firstItem="kmp-bH-djY" firstAttribute="trailing" secondItem="abP-De-bud" secondAttribute="trailing" id="rI3-ra-pzZ"/>
-                            <constraint firstAttribute="bottom" secondItem="abP-De-bud" secondAttribute="bottom" constant="10" id="tl4-xy-Hjf"/>
+                            <constraint firstItem="kmp-bH-djY" firstAttribute="trailing" secondItem="abP-De-bud" secondAttribute="trailing" id="SoB-3S-ydI"/>
+                            <constraint firstAttribute="bottom" secondItem="abP-De-bud" secondAttribute="bottom" constant="20" id="tl4-xy-Hjf"/>
+                            <constraint firstItem="abP-De-bud" firstAttribute="trailing" secondItem="wai-gX-kvM" secondAttribute="trailing" constant="-30" id="vdY-Bx-kLS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dqD-z2-mq3"/>
                     </view>
@@ -51,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omr-SJ-Sta" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1762" y="430"/>
+            <point key="canvasLocation" x="1826" y="430"/>
         </scene>
         <!--Picture Book Table View Controller-->
         <scene sceneID="1Bv-pl-CaT">
@@ -76,7 +77,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="【Papa Please Get tbe Moon for Me】" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfW-fr-fqQ">
-                                                    <rect key="frame" x="128" y="74" width="1848" height="21"/>
+                                                    <rect key="frame" x="140" y="74" width="1810" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
@@ -100,7 +101,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="【We Are Going on a Bear Hunt】" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmu-L6-vYK">
-                                                    <rect key="frame" x="140" y="74" width="258" height="21"/>
+                                                    <rect key="frame" x="136" y="74" width="258" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -124,7 +125,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="【What's the Time, Mr. Wolf】" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eji-ZJ-AhP">
-                                                    <rect key="frame" x="153" y="74" width="232" height="21"/>
+                                                    <rect key="frame" x="140" y="74" width="232" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -268,7 +269,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="【We All Go Traveling By】" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5Q-yN-IKg">
-                                                    <rect key="frame" x="171" y="74" width="207" height="21"/>
+                                                    <rect key="frame" x="173" y="74" width="207" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -379,7 +380,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CUE-zz-cUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="698.55072463768124" y="430.43478260869568"/>
+            <point key="canvasLocation" x="923" y="430"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FIY-w1-zyd">
@@ -397,7 +398,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKn-Je-112" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="464.67391304347831"/>
+            <point key="canvasLocation" x="0.0" y="430"/>
         </scene>
     </scenes>
     <resources>
@@ -415,6 +416,6 @@
         <image name="wolfCover" width="264" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3oD-qT-5cQ"/>
+        <segue reference="6Jw-tM-VA2"/>
     </inferredMetricsTieBreakers>
 </document>
